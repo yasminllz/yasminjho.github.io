@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Técnica Ferando Pessoa</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <span>📚</span>
+                </div>
+                <div class="logo-text">
+                    <h1>Ferando Pessoa</h1>
+                    <p>Escola Técnica</p>
+                </div>
+            </div>
+            
+            <nav class="nav">
+                <button class="nav-btn active" data-section="inicio">Início</button>
+                <button class="nav-btn" data-section="desenvolvimento">Desenvolvimento</button>
+                <button class="nav-btn" data-section="administracao">Administração</button>
+                <button class="nav-btn" data-section="vigilancia">Vigilância</button>
+                <button class="nav-btn" data-section="projetos">Projetos</button>
+            </nav>
+
+            <button class="cta-btn">Matricule-se</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Seção Início -->
+        <section id="inicio" class="section active">
+            <!-- Hero -->
+            <div class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="highlight">EDUCAÇÃO</span>
+                            <br>TÉCNICA
+                        </h1>
+                        <p class="hero-description">
+                            Prepare-se para o futuro com nossos cursos técnicos de 
+                            <span class="highlight">Desenvolvimento de Sistemas</span>, 
+                            <span class="highlight">Administração</span> e 
+                            <span class="highlight">Vigilância</span>.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn-primary" onclick="showSection('desenvolvimento')">Conheça os Cursos</button>
+                            <button class="btn-secondary" onclick="showSection('projetos')">Ver Projetos</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sobre a Escola -->
+            <div class="about-section">
+                <div class="container">
+                    <div class="about-grid">
+                        <div class="about-content">
+                            <h2>Nossa História</h2>
+                            <div class="about-text">
+                                <p>Fundada em 1995 pelo educador visionário Fernando Pessoa Silva, a Escola Técnica Fernando Pessoa nasceu com o propósito de democratizar o acesso à educação técnica de qualidade. Iniciamos com apenas 50 alunos em uma pequena sede no centro de São Paulo, oferecendo o curso de Informática Básica.</p>
+                                <p>Ao longo de quase três décadas, expandimos nossa oferta educacional e hoje somos reconhecidos como uma das principais instituições de ensino técnico do estado. Nossa metodologia inovadora combina teoria sólida com prática intensiva, preparando profissionais altamente qualificados para os desafios do mercado contemporâneo.</p>
+                                <p>Contamos com mais de 15 laboratórios especializados, biblioteca com acervo de 25.000 volumes, auditório para 300 pessoas e parcerias estratégicas com empresas líderes do mercado. Nosso corpo docente é formado por mestres e doutores com vasta experiência profissional, garantindo uma formação que alia conhecimento acadêmico à realidade do mercado de trabalho.</p>
+                                <p>A escola já formou mais de 15.000 profissionais que hoje ocupam posições de destaque em empresas nacionais e multinacionais. Nossa taxa de empregabilidade de 98% nos primeiros 6 meses após a formatura é reflexo da qualidade e relevância de nossos cursos.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-icon">🏆</div>
+                                <h3>98%</h3>
+                                <p>Taxa de Empregabilidade</p>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">👥</div>
+                                <h3>15.000+</h3>
+                                <p>Alunos Formados</p>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">📅</div>
+                                <h3>29</h3>
+                                <p>Anos de Excelência</p>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">📖</div>
+                                <h3>15+</h3>
+                                <p>Laboratórios Especializados</p>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">🤝</div>
+                                <h3>200+</h3>
+                                <p>Empresas Parceiras</p>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">🎓</div>
+                                <h3>3</h3>
+                                <p>Cursos Técnicos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cursos em Destaque -->
+            <div class="courses-preview">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Nossos Cursos</h2>
+                        <p>Escolha sua carreira e transforme seu futuro</p>
+                    </div>
+                    
+                    <div class="courses-grid">
+                        <div class="course-card" onclick="showSection('desenvolvimento')">
+                            <div class="course-icon">💻</div>
+                            <h3>Desenvolvimento de Sistemas</h3>
+                            <p class="course-duration">3 anos</p>
+                            <p>Forme-se como desenvolvedor full-stack com domínio completo em tecnologias web, mobile e desktop. Aprenda as linguagens mais demandadas do mercado.</p>
+                            <div class="course-arrow">→</div>
+                        </div>
+                        <div class="course-card" onclick="showSection('administracao')">
+                            <div class="course-icon">👔</div>
+                            <h3>Administração</h3>
+                            <p class="course-duration">3 anos</p>
+                            <p>Desenvolva competências sólidas em gestão empresarial, liderança, marketing digital e empreendedorismo. Prepare-se para liderar organizações modernas.</p>
+                            <div class="course-arrow">→</div>
+                        </div>
+                        <div class="course-card" onclick="showSection('vigilancia')">
+                            <div class="course-icon">🛡️</div>
+                            <h3>Vigilância e Segurança</h3>
+                            <p class="course-duration">2 anos</p>
+                            <p>Especialização completa em segurança patrimonial, vigilância eletrônica e gestão de riscos. Domine as mais modernas tecnologias de segurança.</p>
+                            <div class="course-arrow">→</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Desenvolvimento -->
+        <section id="desenvolvimento" class="section course-section">
+            <div class="container">
+                <div class="course-header">
+                    <div class="course-icon-large">💻</div>
+                    <h1>Desenvolvimento de Sistemas</h1>
+                    <p class="course-duration">Duração: 3 anos</p>
+                    <p class="course-description">Torne-se um desenvolvedor completo com domínio em tecnologias front-end, back-end, mobile e cloud computing. Nosso curso abrange desde os fundamentos da programação até as mais modernas arquiteturas de software.</p>
+                </div>
+
+                <div class="course-content">
+                    <!-- Carrossel de Imagens -->
+                    <div class="carousel-container">
+                        <h3>Laboratórios e Ambiente</h3>
+                        <div class="carousel" id="carousel-desenvolvimento">
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Laboratório de Informática">
+                                    <div class="slide-caption">Laboratório de Informática</div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sala de Desenvolvimento">
+                                    <div class="slide-caption">Sala de Desenvolvimento</div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Estação de Trabalho">
+                                    <div class="slide-caption">Estações de Trabalho</div>
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev" onclick="prevSlide('desenvolvimento')">‹</button>
+                            <button class="carousel-btn next" onclick="nextSlide('desenvolvimento')">›</button>
+                        </div>
+                    </div>
+
+                    <!-- Flashcards -->
+                    <div class="flashcards-container">
+                        <h3>Disciplinas do Curso</h3>
+                        <div class="flashcards-grid">
+                            <div class="flashcard" onclick="flipCard(this)">
+                                <div class="flashcard-inner">
+                                    <div class="flashcard-front">
+                                        <h4>Linguagens de Programação</h4>
+                                        <div class="card-icon">🐍</div>
+                                    </div>
+                                    <div class="flashcard-back">
+                                        <p>Domínio completo em Python, Java, JavaScript, TypeScript, C# e PHP. Aprenda sintaxe, paradigmas de programação, estruturas de dados e algoritmos avançados.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flashcard" onclick="flipCard(this)">
+                                <div class="flashcard-inner">
+                                    <div class="flashcard-front">
+                                        <h4>Desenvolvimento Web</h4>
+                                        <div class="card-icon">🌐</div>
+                                    </div>
+                                    <div class="flashcard-back">
+                                        <p>HTML5, CSS3, JavaScript ES6+, React, Angular, Vue.js, Node.js, Express.js. Desenvolvimento de SPAs, PWAs e aplicações responsivas com as melhores práticas de UX/UI.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flashcard" onclick="flipCard(this)">
+                                <div class="flashcard-inner">
+                                    <div class="flashcard-front">
+                                        <h4>Banco de Dados e Cloud</h4>
+                                        <div class="card-icon">🗄️</div>
+                                    </div>
+                                    <div class="flashcard-back">
+                                        <p>MySQL, PostgreSQL, MongoDB, Redis. Modelagem de dados, otimização de queries, NoSQL, AWS, Azure, Google Cloud Platform e arquiteturas serverless.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flashcard" onclick="flipCard(this)">
+                                <div class="flashcard-inner">
+                                    <div class="flashcard-front">
+                                        <h4>Desenvolvimento Mobile</h4>
+                                        <div class="card-icon">📱</div>
+                                    </div>
+                                    <div class="flashcard-back">
+                                        <p>React Native, Flutter, Kotlin, Swift. Desenvolvimento nativo e híbrido para iOS e Android, integração com APIs, push notifications e publicação nas stores.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flashcard" onclick="flipCard(this)">
+                                <div class="flashcard-inner">
+                                    <div class="flashcard-front">
+                                        <h4>DevOps e Versionamento</h4>
+                                        <div class="card-icon">⚙️</div>
+                                    </div>
+                                    <div class="flashcard-back">
+                                        <p>Git, GitHub, GitLab, Docker, Kubernetes, CI/CD, Jenkins, metodologias ágeis (Scrum, Kanban) e práticas de desenvolvimento colaborativo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flashcard" onclick="flipCard(this)">
+                                <div class="flashcard-inner">
+                                    <div class="flashcard-front">
+                                        <h4>Segurança e Testes</h4>
+                                        <div class="card-icon">🔒</div>
+                                    </div>
+                                    <div class="flashcard-back">
+                                        <p>Segurança de aplicações, criptografia, autenticação, autorização, testes unitários, integração, TDD, BDD e práticas de código limpo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Administração -->
+        <section id="administracao" class="section course-section">
+            <div class="container">
+                <div class="course-header">
+                    <div class="course-icon-large">👔</div>
+                    <h1>Administração</h1>
+                    <p class="course-duration">Duração: 3 anos</p>
+                    <p class="course-description">Forme-se como um gestor completo e estratégico, capaz de liderar equipes, tomar decisões assertivas e impulsionar o crescimento organizacional. Nosso curso combina teoria administrativa clássica com as mais modernas práticas de gestão digital.</p>
+                </div>
+
+                <div class="course-content">
+                    <!-- Carrossel de Imagens -->
+                    <div class="carousel-container">
+                        <h3>Ambiente de Aprendizado</h3>
+                        <div class="carousel" id="carousel-administracao">
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sala de Aula">
+                                    <div class="slide-caption">Sala de Aula Moderna</div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Laboratório de Gestão">
+                                    <div class="slide-caption">Laboratório de Gestão</div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Biblioteca">
+                                    <div class="slide-caption">Biblioteca</div>
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev" onclick="prevSlide('administracao')">‹</button>
+                            <button class="carousel-btn next" onclick="nextSlide('administracao')">›</button>
+                        </div>
+                    </div>
+
+                    <!-- Flashcards -->
+                    <div class="flashcards-container">
+                        <h3>Disciplinas do Curso</h3>
+                        <div class="flashcards-grid">
+                            <div class="flashcard" onclick="flipCard(this)">
+                                <div class="flashcard-inner">
+                                    <div class="flashcard-front">
+                                        <h4>Gestão Estratégica</h4>
+                                        <div class="card-icon">🏢</div>
+                                    </div>
+                                    <div class="flashcard-back">
+                                        <p>Planejamento estratégico, análise SWOT, balanced scorecard, gestão de mudanças, liderança transformacional e desenvolvimento de competências gerenciais avançadas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flashcard" onclick="flipCard(this)">
+                                <div class="flashcard-inner">
+                                    <div class="flashcard-front">
+                                        <h4>Marketing Digital</h4>
+                                        <div class="card-icon">📈</div>
+                                    </div>
+                                    <div class="flashcard-back">
+                                        <p>SEO, SEM, Google Ads, Facebook Ads, Instagram Marketing, email marketing, marketing de conteúdo, analytics, funil de vendas e automação de marketing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flashcard" onclick="flipCard(this)">
+                                <div class="flashcard-inner">
+                                    <div class="flashcard-front">
+                                        <h4>Gestão Financeira</h4>
+                                        <div class="card-icon">💰</div>
+                                    </div>
+                                    <div class="flashcard-back">
+                                        <p>Análise financeira, fluxo de caixa, orçamento empresarial, análise de investimentos, gestão de riscos, mercado de capitais e controladoria estratégica.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flashcard" onclick="flipCard(this)">
+                                <div class="flashcard-inner">
+                                    <div class="flashcard-front">
+                                        <h4>Gestão de Pessoas</h4>
+                                        <div class="card-icon">👥</div>
+                                    </div>
+                                    <div class="flashcard-back">
+                                        <p>Recrutamento e seleção, treinamento e desenvolvimento, avaliação de desempenho, gestão de talentos, clima organizacional e psicologia organizacional.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flashcard" onclick="flipCard(this)">
+                                <div class="flashcard-inner">
+                                    <div class="flashcard-front">
+                                        <h4>Empreendedorismo</h4>
+                                        <div class="card-icon">🚀</div>
+                                    </div>
+                                    <div class="flashcard-back">
+                                        <p>Plano de negócios, canvas, lean startup, inovação, gestão de startups, captação de recursos, pitch e desenvolvimento de novos produtos e serviços.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flashcard" onclick="flipCard(this)">
+                                <div class="flashcard-inner">
+                                    <div class="flashcard-front">
+                                        <h4>Logística e Operações</h4>
+                                        <div class="card-icon">📦</div>
+                                    </div>
+                                    <div class="flashcard-back">
+                                        <p>Supply chain, gestão de estoques, logística reversa, lean manufacturing, six sigma, gestão da qualidade e otimização de processos operacionais.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Vigilância -->
+        <section id="vigilancia" class="section course-section">
+            <div class="container">
+                <div class="course-header">
+                    <div class="course-icon-large">🛡️</div>
+                    <h1>Vigilância e Segurança</h1>
+                    <p class="course-duration">Duração: 2 anos</p>
+                    <p class="course-description">Torne-se um especialista em segurança patrimonial e pessoal, dominando as mais avançadas tecnologias de monitoramento e técnicas de prevenção. Nosso curso forma profissionais capacitados para atuar em todos os segmentos do mercado de segurança privada.</p>
+                </div>
+
+                <div class="course-content">
+                    <!-- Carrossel de Imagens -->
+                    <div class="carousel-container">
+                        <h3>Instalações de Segurança</h3>
+                        <div class="carousel" id="carousel-vigilancia">
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Central de Monitoramento">
+                                    <div class="slide-caption">Central de Monitoramento</div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://images.pexels.com/photos/2882566/pexels-photo-2882566.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Equipamentos de Segurança">
+                                    <div class="slide-caption">Equipamentos de Segurança</div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sala de Treinamento">
+                                    <div class="slide-caption">Sala de Treinamento</div>
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev" onclick="prevSlide('vigilancia')">‹</button>
+                            <button class="carousel-btn next" onclick="nextSlide('vigilancia')">›</button>
+                        </div>
+                    </div>
+
+                    <!-- Flashcards -->
+                    <div class="flashcards-container">
+                        <h3>Disciplinas do Curso</h3>
+                        <div class="flashcards-grid">
+                            <div class="flashcard" onclick="flipCard(this)">
+                                <div class="flashcard-inner">
+                                    <div class="flashcard-front">
+                                        <h4>Legislação e Ética</h4>
+                                        <div class="card-icon">⚖️</div>
+                                    </div>
+                                    <div class="flashcard-back">
+                                        <p>Lei 7.102/83, Portaria 3.233/12, Código Penal, direitos humanos, ética profissional, uso progressivo da força e procedimentos legais em segurança privada.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flashcard" onclick="flipCard(this)">
+                                <div class="flashcard-inner">
+                                    <div class="flashcard-front">
+                                        <h4>Tecnologia de Segurança</h4>
+                                        <div class="card-icon">📹</div>
+                                    </div>
+                                    <div class="flashcard-back">
+                                        <p>CFTV IP, sistemas de alarme, controle de acesso biométrico, detecção de intrusão, monitoramento remoto, inteligência artificial aplicada à segurança e IoT.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flashcard" onclick="flipCard(this)">
+                                <div class="flashcard-inner">
+                                    <div class="flashcard-front">
+                                        <h4>Emergências Médicas</h4>
+                                        <div class="card-icon">🚑</div>
+                                    </div>
+                                    <div class="flashcard-back">
+                                        <p>Primeiros socorros avançados, RCP, DEA, imobilização, controle de hemorragias, atendimento a politraumatizados e protocolos de emergência médica.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flashcard" onclick="flipCard(this)">
+                                <div class="flashcard-inner">
+                                    <div class="flashcard-front">
+                                        <h4>Prevenção e Combate a Incêndios</h4>
+                                        <div class="card-icon">🔥</div>
+                                    </div>
+                                    <div class="flashcard-back">
+                                        <p>Teoria do fogo, classes de incêndio, sistemas de detecção e alarme, sprinklers, hidrantes, extintores, brigada de incêndio e planos de evacuação.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flashcard" onclick="flipCard(this)">
+                                <div class="flashcard-inner">
+                                    <div class="flashcard-front">
+                                        <h4>Segurança Pessoal</h4>
+                                        <div class="card-icon">👤</div>
+                                    </div>
+                                    <div class="flashcard-back">
+                                        <p>Proteção de autoridades, análise de riscos, escolta armada, técnicas de proteção pessoal, condução defensiva e segurança em eventos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flashcard" onclick="flipCard(this)">
+                                <div class="flashcard-inner">
+                                    <div class="flashcard-front">
+                                        <h4>Gestão de Riscos</h4>
+                                        <div class="card-icon">⚠️</div>
+                                    </div>
+                                    <div class="flashcard-back">
+                                        <p>Análise de vulnerabilidades, mapeamento de riscos, planos de contingência, business continuity, gestão de crises e auditoria de segurança.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projetos" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Projetos dos <span class="highlight">Alunos</span></h1>
+                    <p>Conheça alguns dos projetos desenvolvidos pelos nossos estudantes durante o curso</p>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-badge">Desenvolvimento</div>
+                        <h3>Sistema de Gestão Escolar</h3>
+                        <p>Sistema web completo para gestão acadêmica com módulos de matrícula, notas, frequência, biblioteca e comunicação. Desenvolvido com arquitetura microserviços e interface responsiva.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-badge">Administração</div>
+                        <h3>Plano de Negócios - StartUp Tech</h3>
+                        <p>Plano de negócios abrangente para startup de fintech, incluindo análise de mercado, projeções financeiras, estratégia de marketing digital e modelo de captação de investimentos.</p>
+                        <div class="project-tech">
+                            <span>Business Model</span>
+                            <span>Excel</span>
+                            <span>PowerBI</span>
+                            <span>Pitch Deck</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-badge">Vigilância</div>
+                        <h3>Sistema de Monitoramento Inteligente</h3>
+                        <p>Sistema avançado de monitoramento com inteligência artificial para detecção facial, reconhecimento de placas e identificação de comportamentos suspeitos em tempo real.</p>
+                        <div class="project-tech">
+                            <span>OpenCV</span>
+                            <span>Python</span>
+                            <span>Raspberry Pi</span>
+                            <span>TensorFlow</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-badge">Desenvolvimento</div>
+                        <h3>App Mobile de Delivery</h3>
+                        <p>Aplicativo completo de delivery com geolocalização, chat em tempo real, sistema de avaliações, múltiplas formas de pagamento e painel administrativo para restaurantes.</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>Stripe</span>
+                            <span>Google Maps</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-badge">Administração</div>
+                        <h3>Dashboard Executivo de Vendas</h3>
+                        <p>Dashboard interativo para análise de performance de vendas com KPIs em tempo real, previsões de demanda e relatórios automatizados para tomada de decisão estratégica.</p>
+                        <div class="project-tech">
+                            <span>Google Analytics</span>
+                            <span>Power BI</span>
+                            <span>Tableau</span>
+                            <span>SQL Server</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-badge">Vigilância</div>
+                        <h3>Central de Monitoramento 24h</h3>
+                        <p>Projeto completo de central de monitoramento com múltiplas telas, sistema de gravação em nuvem, alertas automáticos e integração com forças de segurança pública.</p>
+                        <div class="project-tech">
+                            <span>Milestone</span>
+                            <span>CFTV</span>
+                            <span>AWS</span>
+                            <span>API Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <span>📚</span>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Ferando Pessoa</h3>
+                            <p>Escola Técnica</p>
+                        </div>
+                    </div>
+                    <p>Formando profissionais qualificados há mais de 25 anos. Prepare-se para o futuro com nossos cursos técnicos.</p>
+                    <div class="school-info">
+                        <p><strong>Missão:</strong> Formar profissionais técnicos competentes e éticos, contribuindo para o desenvolvimento socioeconômico através da educação de qualidade.</p>
+                        <p><strong>Visão:</strong> Ser reconhecida como a melhor escola técnica do estado, referência em inovação educacional e empregabilidade.</p>
+                        <p><strong>Valores:</strong> Excelência, Ética, Inovação, Responsabilidade Social e Desenvolvimento Sustentável.</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Cursos</h4>
+                    <ul>
+                        <li><button onclick="showSection('desenvolvimento')">Desenvolvimento de Sistemas</button></li>
+                        <li><button onclick="showSection('administracao')">Administração</button></li>
+                        <li><button onclick="showSection('vigilancia')">Vigilância e Segurança</button></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <div class="contact-info">
+                        <p>📧 contato@fernandopessoa.edu.br</p>
+                        <p>📞 (11) 3456-7890</p>
+                        <p>📱 WhatsApp: (11) 99999-8888</p>
+                        <p>📍 Av. Paulista, 1000 - São Paulo - SP</p>
+                        <p>🕒 Seg a Sex: 7h às 22h | Sáb: 8h às 17h</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Escola Técnica Fernando Pessoa. Todos os direitos reservados. | CNPJ: 12.345.678/0001-90</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
